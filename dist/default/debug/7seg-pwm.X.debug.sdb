@@ -1,0 +1,425 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1936 ]
+[d frameptr 6 ]
+"43 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"5 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"4 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 /Applications/microchip/xc8/v2.46/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"6 /Applications/microchip/xc8/v2.46/pic/sources/c99/pic/__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+"6 /Applications/microchip/xc8/v2.46/pic/sources/c99/pic/__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+"73 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _load_pwm load_pwm `(v  1 e 1 0 ]
+"95
+[v _initPwm initPwm `(v  1 e 1 0 ]
+"115
+[v _map_value_to_pwm_resolution map_value_to_pwm_resolution `(us  1 e 2 0 ]
+"121
+[v _init_port init_port `(v  1 e 1 0 ]
+"131
+[v _is_inc_switch_pressed is_inc_switch_pressed `(uc  1 e 1 0 ]
+"153
+[v _is_dec_switch_pressed is_dec_switch_pressed `(uc  1 e 1 0 ]
+"175
+[v _init_timer init_timer `(v  1 e 1 0 ]
+"185
+[v _isr isr `II(v  1 e 1 0 ]
+"241
+[v _display_digit display_digit `(v  1 e 1 0 ]
+"249
+[v _display_SET_command display_SET_command `(v  1 e 1 0 ]
+"257
+[v _display_FR_command display_FR_command `(v  1 e 1 0 ]
+"265
+[v _set_delays set_delays `(v  1 e 1 0 ]
+"290
+[v _get_and_set_increment get_and_set_increment `(v  1 e 1 0 ]
+"312
+[v _get_and_set_decrement get_and_set_decrement `(v  1 e 1 0 ]
+"334
+[v _init_EEPROM init_EEPROM `(v  1 e 1 0 ]
+"362
+[v _check_and_set_max check_and_set_max `(v  1 e 1 0 ]
+"421
+[v _set_factory_settings set_factory_settings `(v  1 e 1 0 ]
+"487
+[v _init init `(v  1 e 1 0 ]
+"530
+[v _main main `(v  1 e 1 0 ]
+[s S196 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"131 /Applications/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1936.h
+[s S202 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S206 . 1 `S196 1 . 1 0 `S202 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES206  1 e 1 @3 ]
+[s S220 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374
+[s S229 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S234 . 1 `S220 1 . 1 0 `S229 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES234  1 e 1 @11 ]
+"491
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+[s S36 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"508
+[u S45 . 1 `S36 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES45  1 e 1 @13 ]
+"553
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+"1017
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1037
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"1284
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1346
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+"1594
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+"1845
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2311
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"3129
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3187
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"3246
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3299
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+[s S172 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3316
+[u S181 . 1 `S172 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES181  1 e 1 @405 ]
+"3361
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"5680
+[v _CCPR5L CCPR5L `VEuc  1 e 1 @796 ]
+"5720
+[v _CCP5CON CCP5CON `VEuc  1 e 1 @798 ]
+"7959
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"8928
+[v _T0CS T0CS `VEb  1 e 0 @1197 ]
+"9039
+[v _TMR0IE TMR0IE `VEb  1 e 0 @93 ]
+"9042
+[v _TMR0IF TMR0IF `VEb  1 e 0 @90 ]
+"9072
+[v _TMR2IE TMR2IE `VEb  1 e 0 @1161 ]
+"9075
+[v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
+"9078
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"9111
+[v _TRISA4 TRISA4 `VEb  1 e 0 @1124 ]
+"48 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _duty_cycle duty_cycle `us  1 e 2 0 ]
+"50
+[v _pwm_value pwm_value `us  1 e 2 0 ]
+"53
+[v _max_value max_value `us  1 e 2 0 ]
+[v _curr_value curr_value `us  1 e 2 0 ]
+[v _last_value last_value `us  1 e 2 0 ]
+"55
+[v _last_value_status last_value_status `uc  1 e 1 0 ]
+"58
+[v _is_pwm_loaded is_pwm_loaded `uc  1 e 1 0 ]
+"59
+[v _pos pos `uc  1 e 1 0 ]
+"64
+[v _digipos digipos `[4]uc  1 e 4 0 ]
+"68
+[v _DisplayNum DisplayNum `DC[10]uc  1 e 10 0 ]
+"530
+[v _main main `(v  1 e 1 0 ]
+{
+"561
+[v main@last_upper_byte_wr last_upper_byte_wr `uc  1 a 1 57 ]
+[v main@last_lower_byte_wr last_lower_byte_wr `uc  1 a 1 56 ]
+"582
+} 0
+"115
+[v _map_value_to_pwm_resolution map_value_to_pwm_resolution `(us  1 e 2 0 ]
+{
+[v map_value_to_pwm_resolution@x x `us  1 p 2 48 ]
+[v map_value_to_pwm_resolution@max_value max_value `us  1 p 2 50 ]
+"118
+} 0
+"10 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 11 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 10 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 40 ]
+"70
+} 0
+"8 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S559 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S564 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S567 . 4 `l 1 i 4 0 `d 1 f 4 0 `S559 1 fAsBytes 4 0 `S564 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S567  1 a 4 34 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 28 ]
+[s S636 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S639 . 2 `s 1 i 2 0 `us 1 n 2 0 `S636 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S639  1 a 2 38 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 33 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 32 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 27 ]
+"8
+[v ___flmul@b b `d  1 p 4 14 ]
+[v ___flmul@a a `d  1 p 4 18 ]
+"205
+} 0
+"4 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 7 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 5 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 1 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 9 ]
+"60
+} 0
+"487 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _init init `(v  1 e 1 0 ]
+{
+"505
+[v init@counter counter `uc  1 a 1 11 ]
+"519
+} 0
+"421
+[v _set_factory_settings set_factory_settings `(v  1 e 1 0 ]
+{
+"425
+[v set_factory_settings@factory_setting_mode_enabled factory_setting_mode_enabled `uc  1 a 1 7 ]
+"485
+} 0
+"257
+[v _display_FR_command display_FR_command `(v  1 e 1 0 ]
+{
+"263
+} 0
+"175
+[v _init_timer init_timer `(v  1 e 1 0 ]
+{
+"182
+} 0
+"121
+[v _init_port init_port `(v  1 e 1 0 ]
+{
+"129
+} 0
+"334
+[v _init_EEPROM init_EEPROM `(v  1 e 1 0 ]
+{
+"338
+[v init_EEPROM@max_upper_byte_rd max_upper_byte_rd `us  1 a 2 6 ]
+[v init_EEPROM@max_lower_byte_rd max_lower_byte_rd `us  1 a 2 4 ]
+[v init_EEPROM@last_upper_byte_rd last_upper_byte_rd `us  1 a 2 2 ]
+[v init_EEPROM@last_lower_byte_rd last_lower_byte_rd `us  1 a 2 0 ]
+"359
+} 0
+"6 /Applications/microchip/xc8/v2.46/pic/sources/c99/pic/__eeread.c
+[v _eeprom_read eeprom_read `(uc  1 e 1 0 ]
+{
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+[v eeprom_read@addr addr `uc  1 a 1 wreg ]
+"9
+[v eeprom_read@addr addr `uc  1 a 1 4 ]
+"19
+} 0
+"95 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _initPwm initPwm `(v  1 e 1 0 ]
+{
+"112
+} 0
+"73
+[v _load_pwm load_pwm `(v  1 e 1 0 ]
+{
+[v load_pwm@pwm_value pwm_value `uc  1 a 1 wreg ]
+"75
+[v load_pwm@msb msb `uc  1 a 1 4 ]
+[v load_pwm@lsb lsb `uc  1 a 1 3 ]
+"73
+[v load_pwm@pwm_value pwm_value `uc  1 a 1 wreg ]
+"77
+[v load_pwm@pwm_value pwm_value `uc  1 a 1 5 ]
+"92
+} 0
+"362
+[v _check_and_set_max check_and_set_max `(v  1 e 1 0 ]
+{
+"407
+[v check_and_set_max@max_eeprom max_eeprom `us  1 a 2 17 ]
+"408
+[v check_and_set_max@max_upper_byte_wr max_upper_byte_wr `uc  1 a 1 16 ]
+[v check_and_set_max@max_lower_byte_wr max_lower_byte_wr `uc  1 a 1 14 ]
+"389
+[v check_and_set_max@some_value_set some_value_set `uc  1 a 1 19 ]
+"366
+[v check_and_set_max@max_value_setting_selected max_value_setting_selected `uc  1 a 1 15 ]
+"419
+} 0
+"290
+[v _get_and_set_increment get_and_set_increment `(v  1 e 1 0 ]
+{
+"292
+[v get_and_set_increment@counter counter `us  1 a 2 10 ]
+"310
+} 0
+"131
+[v _is_inc_switch_pressed is_inc_switch_pressed `(uc  1 e 1 0 ]
+{
+"133
+[v is_inc_switch_pressed@switch_status switch_status `uc  1 a 1 2 ]
+"151
+} 0
+"312
+[v _get_and_set_decrement get_and_set_decrement `(v  1 e 1 0 ]
+{
+"314
+[v get_and_set_decrement@counter counter `us  1 a 2 10 ]
+"331
+} 0
+"265
+[v _set_delays set_delays `(v  1 e 1 0 ]
+{
+[v set_delays@counter counter `us  1 p 2 6 ]
+"288
+} 0
+"241
+[v _display_digit display_digit `(v  1 e 1 0 ]
+{
+[v display_digit@value value `us  1 p 2 4 ]
+"247
+} 0
+"5 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 10 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 0 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 2 ]
+"25
+} 0
+"5 /Applications/microchip/xc8/v2.46/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 7 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 1 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 3 ]
+"30
+} 0
+"153 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _is_dec_switch_pressed is_dec_switch_pressed `(uc  1 e 1 0 ]
+{
+"155
+[v is_dec_switch_pressed@switch_status switch_status `uc  1 a 1 2 ]
+"172
+} 0
+"6 /Applications/microchip/xc8/v2.46/pic/sources/c99/pic/__eewrite.c
+[v _eeprom_write eeprom_write `(v  1 e 1 0 ]
+{
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@addr addr `uc  1 a 1 wreg ]
+[v eeprom_write@value value `uc  1 p 1 1 ]
+[v eeprom_write@addr addr `uc  1 a 1 4 ]
+"9
+} 0
+"249 /Users/kunjchauhan/MPLABXProjects/7seg-pwm.X/main.c
+[v _display_SET_command display_SET_command `(v  1 e 1 0 ]
+{
+"255
+} 0
+"185
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"239
+} 0
